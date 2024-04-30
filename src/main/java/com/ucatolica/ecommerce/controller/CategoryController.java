@@ -22,11 +22,6 @@ public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
 
-	/**
-	 * Obtiene la lista de todas las categorías.
-	 *
-	 * @return Una respuesta con la lista de categorías.
-	 */
 	@GetMapping("/")
 	public ResponseEntity<List<Category>> getCategories() {
 		List<Category> body = categoryService.listCategories();
