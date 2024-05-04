@@ -28,12 +28,6 @@ public class ExceptionHandlerAdvice {
 		return new ResponseEntity<ApiResponse>(new ApiResponse(false, message), HttpStatus.CONFLICT);
 	}
 
-	// @ExceptionHandler(AccessDeniedException.class)
-	// public ResponseEntity<ApiResponse> accessDenied(AccessDeniedException ex){
-	//     String message = ex.getMessage();
-	//
-	//     return new ResponseEntity<ApiResponse>(new ApiResponse(false, message), HttpStatus.FORBIDDEN);
-	// }
 
 	/**
 	 * Maneja excepciones de validación y genera una respuesta con estado "Unprocessable Entity".
